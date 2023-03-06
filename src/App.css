@@ -1,0 +1,31 @@
+.spinner {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  top: 220px;
+  margin: auto;
+  border-radius: 50%;
+  background: transparent;
+  border: solid white 3px;
+  animation: round 1s linear infinite;
+}
+
+.spinner::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border-top: rgb(81, 219, 217) 5px solid;
+}
+
+@keyframes round {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
